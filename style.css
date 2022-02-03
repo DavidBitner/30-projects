@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#title {
+  animation: color-change 60s infinite alternate;
+}
+
+
+.project {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@keyframes color-change {
+  0% {
+    color: lightblue;
+  }
+  25% {
+    color: lightcoral;
+  }
+  50% {
+    color: lightgreen;
+  }
+  75% {
+    color: lightgoldenrodyellow;
+  }
+  100% {
+    color: lightslategray;
+  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
