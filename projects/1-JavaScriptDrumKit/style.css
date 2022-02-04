@@ -59,3 +59,16 @@ body {
 kbd {
   font-size: 2rem;
 }
+
+.return {
+  position: absolute;
+  padding: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  border-radius: 50%;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
