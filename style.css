@@ -11,7 +11,7 @@ body {
   box-sizing: border-box;
   padding: 3rem;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-image: linear-gradient(to top right, #09203f 0%, #537895 100%);
 }
 
 .container {
@@ -25,29 +25,22 @@ body {
   animation: color-change 60s infinite alternate;
 }
 
+#title a {
+  text-decoration: none;
+  animation: color-change 60s infinite alternate;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: repeat(10, min-content);
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .project {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
-}
-
-@keyframes color-change {
-  0% {
-    color: lightblue;
-  }
-  25% {
-    color: lightcoral;
-  }
-  50% {
-    color: lightgreen;
-  }
-  75% {
-    color: lightgoldenrodyellow;
-  }
-  100% {
-    color: lightslategray;
-  }
+  justify-self: start;
 }
 
 .hover-underline-animation {
@@ -71,4 +64,22 @@ body {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@keyframes color-change {
+  0% {
+    color: lightblue;
+  }
+  25% {
+    color: lightcoral;
+  }
+  50% {
+    color: lightgreen;
+  }
+  75% {
+    color: lightgoldenrodyellow;
+  }
+  100% {
+    color: lightslategray;
+  }
 }
