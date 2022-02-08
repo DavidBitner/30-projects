@@ -19,6 +19,7 @@ body {
   grid-template-rows: repeat(2, min-content);
   grid-template-columns: 1fr;
   gap: 30px;
+  text-align: center;
 }
 
 #title {
@@ -40,7 +41,7 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
-  justify-self: start;
+  justify-self: center;
 }
 
 .hover-underline-animation {
