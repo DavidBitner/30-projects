@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+  background: #ffc600;
+  font-family: "helvetica neue";
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  display: flex;
+  background: #6b0f9c;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  align-items: center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  font-size: 1rem;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.panel1 {
+  background-image: url(https://source.unsplash.com/random/1500x1500?nature);
+}
+.panel2 {
+  background-image: url(https://source.unsplash.com/random/1500x1500?forest);
+}
+.panel3 {
+  background-image: url(https://source.unsplash.com/random/1500x1500?mountain);
+}
+.panel4 {
+  background-image: url(https://source.unsplash.com/random/1500x1500?space);
+}
+.panel5 {
+  background-image: url(https://source.unsplash.com/random/1500x1500?lake);
+}
+
+/* Flex Children */
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel p {
+  text-transform: uppercase;
+  font-family: "Amatic SC", cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 1em;
+}
+
+.panel p:nth-child(2) {
+  font-size: 2em;
+}
+
+.panel.open {
+  font-size: 2.5em;
+  flex: 3;
+}
+
+
+.return {
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  text-decoration: none;
+  bottom: 2rem;
+  right: 2rem;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px 0px rgb(9, 32, 63);
+  outline: none;
+  background: linear-gradient(
+    0deg,
+    rgba(9, 32, 63, 1) 0%,
+    rgba(15, 50, 97, 1) 100%
+  );
+}
+
+.return:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(83, 120, 149, 1) 0%,
+    rgba(109, 157, 194, 1) 100%
+  );
+  box-shadow: 2px 2px 15px 0px rgb(83, 120, 149);
+}
