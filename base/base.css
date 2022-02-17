@@ -24,12 +24,13 @@ body {
 }
 
 .return {
-  text-align: center;
-  font-size: 18px;
-  position: absolute;
-  text-decoration: none;
+  position: sticky;
+  float: right;
   bottom: 2rem;
   right: 2rem;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
   color: #fff;
   border-radius: 50%;
   padding: 1rem 1.5rem;
