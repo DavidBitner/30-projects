@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(53, 11, 11);
+  color: white;
+}
+
+.container {
+  max-width: 700px;
+  padding: 3rem;
+  text-align: justify;
+  margin: auto;
+  position: relative;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.align-left {
+  float: left;
+  margin-right: 1rem;
+}
+
+.align-right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+.return {
+  position: sticky;
+  float: right;
+  bottom: 2rem;
+  right: 2rem;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px 0px rgb(9, 32, 63);
+  outline: none;
+  background: linear-gradient(
+    0deg,
+    rgba(9, 32, 63, 1) 0%,
+    rgba(15, 50, 97, 1) 100%
+  );
+}
+
+.return:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(83, 120, 149, 1) 0%,
+    rgba(109, 157, 194, 1) 100%
+  );
+  box-shadow: 2px 2px 15px 0px rgb(83, 120, 149);
+}
