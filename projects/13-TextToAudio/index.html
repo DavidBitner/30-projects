@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Audio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app">
+        <div class="title">Text to Audio</div>
+        <select name="voice" id="voices">
+          <option value="">Select A Voice</option>
+        </select>
+
+        <div class="ranges">
+          <label for="rate">Rate: </label>
+          <input
+            type="range"
+            name="rate"
+            class="rate slider"
+            min="0"
+            max="3"
+            value="1"
+            step="0.1"
+          />
+          <label for="pitch">Pitch: </label>
+          <input
+            type="range"
+            name="pitch"
+            class="pitch slider"
+            min="0"
+            max="2"
+            step="0.1"
+          />
+        </div>
+
+        <textarea name="text" id="text" cols="30" rows="5"></textarea>
+
+        <div class="btns">
+          <a href="#" class="btn stop">Stop</a>
+          <a href="#" class="btn speak">Speak</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="return" href="../../index.html"><</a>
+  </body>
+</html>
