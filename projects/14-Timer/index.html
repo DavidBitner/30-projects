@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btns">
+        <button class="btn" data-time="20">20 Sec</button>
+        <button class="btn" data-time="300">5 Min</button>
+        <button class="btn" data-time="900">15 Min</button>
+        <button class="btn" data-time="1200">20 Min</button>
+        <button class="btn" data-time="3600">1 Hour</button>
+        <form name="customForm" id="custom">
+          <input
+            type="text"
+            class="input"
+            name="minutes"
+            placeholder="Enter Minutes"
+          />
+        </form>
+      </div>
+
+      <div class="display">
+        <div class="time-left"></div>
+        <div class="time-end"></div>
+      </div>
+
+      <a class="return" href="../../index.html"><</a>
+    </div>
+  </body>
+</html>
