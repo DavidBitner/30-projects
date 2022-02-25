@@ -1,0 +1,88 @@
+body {
+  background-image: linear-gradient(to top left, rgb(117, 54, 130) 0%, rgb(191, 46, 52) 100%);
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h2 {
+  color: rgb(199, 54, 95);
+}
+
+.active {
+  background-color: rgb(255, 99, 198);
+}
+
+.inactive {
+  background-color: rgb(255, 133, 211);
+}
+
+.win {
+  background-color: rgb(0, 128, 0);
+}
+
+#box {
+  background-color: rgb(199, 54, 95);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.player {
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+}
+
+.space {
+  height: 5%;
+}
+
+.btns {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn {
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  color: rgb(68, 68, 68);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+}
+
+#dice {
+  height: 7rem;
+  width: 7rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+a.return {
+  position: absolute;
+  float: right;
+  bottom: 2rem;
+  right: 2rem;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px 0px rgb(9, 32, 63);
+  outline: none;
+  background: linear-gradient(
+    0deg,
+    rgba(9, 32, 63, 1) 0%,
+    rgba(15, 50, 97, 1) 100%
+  );
+}
+
+a.return:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(83, 120, 149, 1) 0%,
+    rgba(109, 157, 194, 1) 100%
+  );
+  box-shadow: 2px 2px 15px 0px rgb(83, 120, 149);
+}
