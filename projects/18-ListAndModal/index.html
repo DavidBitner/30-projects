@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List and Modal</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Lista</h1>
+    <div class="btns">
+      <a href="#" class="btn" id="add">ADD</a>
+      <a href="#" class="btn" id="delete">DELETE</a>
+    </div>
+    <div class="container">
+      <table id="table">
+        <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Details</th>
+          <th>Date</th>
+        </thead>
+
+        <tbody id="body"></tbody>
+      </table>
+    </div>
+
+    <div class="modal" id="modal-add">
+      <div class="modal-content">
+        <h2 class="title">Add item to list</h2>
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <input type="text" name="type" id="type" placeholder="Type" />
+        <input type="text" name="details" id="details" placeholder="Details" />
+        <a href="#" class="btn btn-sml" id="modal-add-cancel">CANCEL</a>
+        <a href="#" class="btn btn-sml" id="modal-add-confirm">CONFIRM</a>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-delete">
+      <div class="modal-content">
+        <h2 class="title">Remove item from list</h2>
+        <input type="text" name="id" id="id" placeholder="ID" />
+        <p id="status">Doidera</p>
+        <a href="#" class="btn btn-sml" id="modal-delete-cancel">CANCEL</a>
+        <a href="#" class="btn btn-sml" id="modal-delete-confirm">CONFIRM</a>
+      </div>
+    </div>
+
+    <a class="return" href="../../index.html"><</a>
+  </body>
+</html>
