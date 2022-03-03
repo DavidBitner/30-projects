@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Tangerine", cursive;
+}
+
+body {
+  background-image: url("background.jpg");
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  background-blend-mode: luminosity;
+  font-size: 1.5em;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: min-content;
+  min-height: 100vh;
+  align-content: center;
+  justify-content: center;
+}
+
+.quote-box {
+  background-color: #fff;
+  max-width: 70vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #fff;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  padding: 1.5rem;
+  gap: 1rem;
+  background-image: url("./quotes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn {
+  font-size: 1.5em;
+  padding: 1.2rem 2rem 1rem 2rem;
+  color: #a52a2a;
+}
+
+.quote-text {
+  font-size: 1.5em;
+}
+
+img {
+  margin-top: -1rem;
+}
+
+.quote-autor {
+  justify-self: right;
+  font-weight: bold;
+  font-size: 2em;
+  color: #a52a2a;
+}
+
+.return {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px 0px rgb(9, 32, 63);
+  outline: none;
+  background: linear-gradient(
+    0deg,
+    rgba(9, 32, 63, 1) 0%,
+    rgba(15, 50, 97, 1) 100%
+  );
+  font-family: sans-serif;
+}
+
+.return:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(83, 120, 149, 1) 0%,
+    rgba(109, 157, 194, 1) 100%
+  );
+  box-shadow: 2px 2px 15px 0px rgb(83, 120, 149);
+}
