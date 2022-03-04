@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tip-box">
+        <h1 class="title">Tip Calculator</h1>
+
+        <div class="value">
+          <p class="value-sign">$</p>
+          <input
+            class="value-input"
+            type="text"
+            pattern="[0-9]"
+            placeholder="Value"
+          />
+        </div>
+
+        <div class="tip-slider">
+          <label class="tip-slider-label" for="tip">Tip:</label>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            step="5"
+            name="tip"
+            class="slider"
+            value="10"
+          />
+
+          <p class="tip-slider-percentage">10%</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <h2 class="results">Results</h2>
+
+        <div class="result">
+          <p class="result-text">Tip amount</p>
+          <p class="result-value" id="tip-amount">$00.00</p>
+        </div>
+
+        <div class="result">
+          <p class="result-text">Total Bill With Tip</p>
+          <p class="result-value" id="total-bill">$00.00</p>
+        </div>
+      </div>
+
+      <a class="return" href="../../index.html"><</a>
+    </div>
+  </body>
+</html>
