@@ -14,7 +14,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 body * {
@@ -28,8 +28,8 @@ body * {
   align-content: center;
   justify-content: center;
   gap: 2rem;
-  color: white;
-  background-color: black;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 .container__text {
@@ -42,14 +42,14 @@ body * {
   min-width: 30vw;
   display: grid;
   grid-template-rows: min-content;
-  box-shadow: 0px 0px 20px darkgray;
+  box-shadow: 0px 0px 20px rgb(169, 169, 169);
   background-color: transparent;
   border-radius: 7px;
 }
 
 .box__header {
   padding: 1rem 0;
-  background-color: darkgray;
+  background-color: rgb(169, 169, 169);
   display: grid;
   align-items: center;
   padding-left: 2rem;
@@ -58,7 +58,7 @@ body * {
 }
 
 .box__body {
-  background-color: lightgray;
+  background-color: rgb(211, 211, 211);
   padding-left: 2rem;
   padding-top: 2rem;
   font-size: 1.2em;
@@ -71,7 +71,11 @@ body * {
   font-size: 1.5em;
   text-transform: uppercase;
   padding: 1.1rem 1rem 1rem 1rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn:hover{
+  background-color: rgba(255, 255, 255, 0.8)
 }
 
 .return {
@@ -82,7 +86,7 @@ body * {
   text-align: center;
   font-size: 18px;
   text-decoration: none;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-radius: 50%;
   padding: 1rem 1.5rem;
   transition: all 0.3s ease;
