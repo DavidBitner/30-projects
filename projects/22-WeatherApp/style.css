@@ -55,6 +55,7 @@ body {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgb(173, 216, 230);
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .btn:hover {
