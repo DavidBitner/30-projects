@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   box-sizing: border-box;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to top right, #09203f 0%, #537895 100%);
+  background-color: #000000;
 }
 
 .container {
@@ -24,12 +26,12 @@ body {
 }
 
 #title {
-  animation: color-change 60s infinite alternate;
+  color: #008f11;
 }
 
 #title a {
   text-decoration: none;
-  animation: color-change 60s infinite alternate;
+  color: #008f11;
 }
 
 .projects {
@@ -42,7 +44,7 @@ body {
 .project {
   text-decoration: none;
   font-size: 1.5rem;
-  color: white;
+  color: #ffffff;
   justify-self: center;
 }
 
@@ -59,7 +61,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: #008f11;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
@@ -69,20 +71,12 @@ body {
   transform-origin: bottom left;
 }
 
-@keyframes color-change {
-  0% {
-    color: lightblue;
-  }
-  25% {
-    color: lightcoral;
-  }
-  50% {
-    color: lightgreen;
-  }
-  75% {
-    color: lightgoldenrodyellow;
-  }
-  100% {
-    color: lightslategray;
-  }
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: .2;
 }
