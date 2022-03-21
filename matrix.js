@@ -92,4 +92,16 @@ const update = function () {
   requestAnimationFrame(update);
 };
 
-update();
+// Reload page in case of a window resize.
+// This is necessary so the matrix effect don't break when user rezises window
+let timeOutFunction;
+
+function reloadPage() {
+  window.location.href = window.location.href;
+}
+
+window.addEventListener("load", update);
+window.addEventListener("resize", () => {
+  clearTimeout(timeOutFunction);
+  timeOutFunction = setTimeout(reloadPage, 500);
+});
