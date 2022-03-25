@@ -1,3 +1,9 @@
+:root {
+  --color-primary: #008f11;
+  --color-primary-dark: #003b00;
+  --color-secundary: #00ff41;
+}
+
 *,
 *::after,
 *::before {
@@ -31,7 +37,7 @@ body {
   text-align: center;
   font-size: 18px;
   text-decoration: none;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-radius: 50%;
   padding: 1rem 1.5rem;
   transition: all 0.3s ease;
