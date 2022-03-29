@@ -20,6 +20,7 @@ body {
   background-position: center;
   background-color: black;
   color: white;
+  transition: all 0.2s;
 }
 
 .container {
@@ -85,11 +86,25 @@ body {
 
 .player__play {
   height: 40px;
+  width: 40px;
 }
 
 img {
   cursor: pointer;
   filter: drop-shadow(0 0 5px var(--color-primary));
+  transition: all 0.2s;
+}
+
+img:hover {
+  filter: drop-shadow(0 0 10px var(--color-primary));
+}
+
+img:active {
+  filter: drop-shadow(0 0 0 var(--color-primary));
+}
+
+.active {
+  content: url("svg/pause.svg");
 }
 
 .return {
