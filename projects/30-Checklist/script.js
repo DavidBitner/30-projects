@@ -51,5 +51,4 @@ function checkUncheck(e) {
 }
 
 btn.addEventListener("click", addTask);
-
 checklist.addEventListener("click", (e) => checkUncheck(e));

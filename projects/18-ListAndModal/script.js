@@ -1,16 +1,13 @@
 const btnAdd = document.querySelector("#add");
 const btnDelete = document.querySelector("#delete");
-
 const table = document.querySelector("#table");
 const tableBody = document.querySelector("#body");
-
 const modalAdd = document.querySelector("#modal-add");
 const modalAddBtnConfirm = document.querySelector("#modal-add-confirm");
 const modalAddBtnCancel = document.querySelector("#modal-add-cancel");
 const modalAddName = document.querySelector("#name");
 const modalAddType = document.querySelector("#type");
 const modalAddDetails = document.querySelector("#details");
-
 const modalDelete = document.querySelector("#modal-delete");
 const modalDeleteBtnConfirm = document.querySelector("#modal-delete-confirm");
 const modalDeleteBtnCancel = document.querySelector("#modal-delete-cancel");
@@ -20,7 +17,6 @@ const modalDeleteStatus = document.querySelector("#status");
 let tableData = [];
 let rowData = {};
 
-// Functions
 function setLocalStorage() {
   localStorage.setItem("storage", JSON.stringify(tableData));
 }
@@ -71,7 +67,6 @@ function showTable() {
   });
 }
 
-// Event listeners
 btnAdd.addEventListener("click", function () {
   showModal("block");
 });
@@ -110,11 +105,7 @@ modalDeleteBtnConfirm.addEventListener("click", function () {
       showTable();
       return false;
     } else {
-      modalStatus(
-        "visible",
-        `ID "${dict.id}" não encontrado na lista`,
-        "#ff727e"
-      );
+      modalStatus("visible", `ID "${idi}" not found`, "#ff727e");
       return true;
     }
   });

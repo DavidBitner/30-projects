@@ -1,20 +1,16 @@
 const btns = document.getElementsByTagName("a");
-
 const secondaryView = document.querySelector("#secondary-view");
 const mainView = document.querySelector("#main-view");
-
 const clear = document.querySelector("#clear");
 const clearAll = document.querySelector("#clear-all");
 const backspace = document.querySelector("#backspace");
 const negative = document.querySelector("#negative");
 const comma = document.querySelector("#comma");
-
 const division = document.querySelector("#division");
 const multiplication = document.querySelector("#multiplication");
 const subtraction = document.querySelector("#subtraction");
 const sum = document.querySelector("#sum");
 const equal = document.querySelector("#equal");
-
 const numbers = document.getElementsByClassName("btn-number");
 
 let type = "none";

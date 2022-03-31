@@ -4,7 +4,6 @@ class ListBinding {
     this.textList = [];
   }
 
-  // Makes <li>text</li> tag
   static createListItem(text) {
     const li = document.createElement("li");
 

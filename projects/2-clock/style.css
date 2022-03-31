@@ -27,13 +27,13 @@ body {
 .clock {
   width: 30rem;
   height: 30rem;
-  border: 20px solid white;
+  border: 20px solid rgb(255, 255, 255);
   border-radius: 50%;
   margin: 50px auto;
   position: relative;
   padding: 2rem;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
-    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px rgb(239, 239, 239),
+    inset 0 0 10px rgb(0, 0, 0), 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .clock-inside {
@@ -45,7 +45,7 @@ body {
 
 .pointer {
   width: 50%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   position: absolute;
   top: 50%;
   transform-origin: 100%;
@@ -64,33 +64,4 @@ body {
 }
 .pointer-second {
   height: 4px;
-}
-
-.return {
-  text-align: center;
-  font-size: 18px;
-  position: absolute;
-  text-decoration: none;
-  bottom: 2rem;
-  right: 2rem;
-  color: #fff;
-  border-radius: 50%;
-  padding: 1rem 1.5rem;
-  transition: all 0.3s ease;
-  box-shadow: 2px 2px 10px 0px rgb(9, 32, 63);
-  outline: none;
-  background: linear-gradient(
-    0deg,
-    rgba(9, 32, 63, 1) 0%,
-    rgba(15, 50, 97, 1) 100%
-  );
-}
-
-.return:hover {
-  background: linear-gradient(
-    0deg,
-    rgba(83, 120, 149, 1) 0%,
-    rgba(109, 157, 194, 1) 100%
-  );
-  box-shadow: 2px 2px 15px 0px rgb(83, 120, 149);
 }

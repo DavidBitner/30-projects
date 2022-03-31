@@ -1,7 +1,6 @@
-// Get the current year for the copyright
+// Get current year for copyright
 $("#year").text(new Date().getFullYear());
 
-// Varibles
 let p1 = document.querySelector(`#p1`);
 let p2 = document.querySelector(`#p2`);
 let p1Score = document.querySelector(`#p1-score`);
@@ -17,7 +16,6 @@ let score = 0;
 let activePlayer = 1;
 let roll1 = false;
 
-// Setting Game
 p1Score.textContent = 0;
 p1Total.textContent = 0;
 p2Score.textContent = 0;
@@ -30,7 +28,6 @@ function changePlayer(jogador) {
   p2.classList.toggle("active");
 }
 
-// Listeners
 btnNewGame.addEventListener("click", function () {
   p1Score.textContent = 0;
   p1Total.textContent = 0;

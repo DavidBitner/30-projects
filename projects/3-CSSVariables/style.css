@@ -1,3 +1,9 @@
+:root {
+  --base: #d37272;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
 *,
 *::after,
 *::before {
@@ -8,14 +14,13 @@
 }
 
 body {
-  background-image: url("background.jpg");
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #2e004c;
+  background-color: rgb(46, 0, 76);
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .container {
@@ -49,42 +54,6 @@ body {
   grid-template-columns: repeat(2, min-content);
   gap: 1rem;
   align-items: center;
-}
-
-.return {
-  text-align: center;
-  font-size: 18px;
-  position: absolute;
-  text-decoration: none;
-  bottom: 2rem;
-  right: 2rem;
-  color: #fff;
-  border-radius: 50%;
-  padding: 1rem 1.5rem;
-  transition: all 0.3s ease;
-  box-shadow: 2px 2px 10px 0px rgb(9, 32, 63);
-  outline: none;
-  background: linear-gradient(
-    0deg,
-    rgba(9, 32, 63, 1) 0%,
-    rgba(15, 50, 97, 1) 100%
-  );
-}
-
-.return:hover {
-  background: linear-gradient(
-    0deg,
-    rgba(83, 120, 149, 1) 0%,
-    rgba(109, 157, 194, 1) 100%
-  );
-  box-shadow: 2px 2px 15px 0px rgb(83, 120, 149);
-}
-
-/* Variables */
-:root {
-  --base: #d37272;
-  --spacing: 10px;
-  --blur: 10px;
 }
 
 .img {

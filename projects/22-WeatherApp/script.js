@@ -35,7 +35,7 @@ async function showWeather() {
     }
   );
   const data = await response.json();
-  
+
   const object = {
     country: data.location.country,
     city: data.location.region,

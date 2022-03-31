@@ -5,7 +5,6 @@ const playlistNumberDisplay = document.querySelector(
 );
 const progress = document.querySelector(`.player__progress`);
 const progressContainer = document.querySelector(`.player__progress-container`);
-
 const btnPlay = document.querySelector(`.player__play`);
 const btnNext = document.querySelector(`.player__next`);
 const btnPrev = document.querySelector(`.player__prev`);
