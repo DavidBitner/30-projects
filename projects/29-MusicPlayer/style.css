@@ -104,5 +104,5 @@ img:active {
 }
 
 .active {
-  content: url("svg/pause.svg");
+  content: url("img/pause.png");
 }
