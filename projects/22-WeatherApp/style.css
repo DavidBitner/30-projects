@@ -56,11 +56,16 @@ body {
   box-shadow: 0px 0px 10px rgb(173, 216, 230);
   transition: all 0.2s;
   cursor: pointer;
+  outline: none;
 }
 
 .btn:hover {
   background-color: rgba(173, 216, 230, 0.468);
   box-shadow: 0px 0px 10px rgb(173, 255, 230);
+}
+
+.btn:active {
+  transform: scale(0.9);
 }
 
 .current-weather-img {

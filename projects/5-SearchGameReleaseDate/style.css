@@ -116,6 +116,7 @@ span.ripple {
   border-radius: 4px;
   justify-self: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn:hover {
