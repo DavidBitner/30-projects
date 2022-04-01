@@ -121,9 +121,14 @@ body {
   box-shadow: 0 0 20px rgb(120, 22, 206);
   text-transform: uppercase;
   font-family: "Dancing Script", cursive;
+  transition: all 0.2s;
 }
 
 .btn:hover {
   background-color: rgba(120, 22, 206, 0.653);
-  box-shadow: 0 0 20px rgba(120, 22, 206, 0.653);
+  box-shadow: 0 0 30px rgba(120, 22, 206, 0.653);
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
