@@ -29,11 +29,11 @@ function showBotResponse() {
   const data = null;
 
   const xhr = new XMLHttpRequest();
-  const url = `https://aeona2.p.rapidapi.com/?userId=0&text=${input.value}`;
+  const url = `https://aeona3.p.rapidapi.com/?text=${input.value}&userId=12312312312`;
   xhr.withCredentials = true;
 
   xhr.open("GET", url);
-  xhr.setRequestHeader("X-RapidAPI-Host", "aeona2.p.rapidapi.com");
+  xhr.setRequestHeader("X-RapidAPI-Host", "aeona3.p.rapidapi.com");
   xhr.setRequestHeader("X-RapidAPI-Key", MY_API_KEY);
 
   xhr.send(data);
